@@ -29,7 +29,7 @@ public class TST {
 		return currentNode;
 	}
 
-	private class edContainer{
+	public class edContainer implements Comparable<edContainer>{
 		int frequency;
 		String text;
 		public edContainer(String text, int frequency){
@@ -38,6 +38,11 @@ public class TST {
 		}
 		public String toString(){
 			return text+":"+frequency;
+		}
+
+		@Override
+		public int compareTo(edContainer o) {
+			return o.frequency - this.frequency ;
 		}
 	}
 

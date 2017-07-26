@@ -1,5 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -21,7 +22,8 @@ public class Main {
             e.printStackTrace();
         }
         //tst.increaseFrequency("computer");
-        System.out.println(tst.getAllWordsUnderEditDistance("ge", 3));
+        Frame f = new Frame();
+        //System.out.println(Correction.reccommend(tst.getAllWordsUnderEditDistance("comoter", 2)));
     }
 
 
